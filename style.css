@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #c1e997;
+    color: black;
+}
+
+.content-section {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.paragraph{
+    border: 5px solid rgb(202, 235, 152);
+    padding: 20px;
+    outline: 5px solid white;
+    outline-offset: 20px;
+    width: 50%;
+    margin: 50px auto;
+    -webkit-text-fill-color: white;
+    font-size: 20px;
+}
+
+.paris_button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.4s, font-size 0.4s;
+}
+
+.paris_button:hover {
+    background: linear-gradient(to right, #118bef, #85f012);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    #title {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 10px;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+
+    .paragraph {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .paris_button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #title {
+        font-size: 1.2rem;
+    }
+
+    .paragraph {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+
+    .paris_button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
